@@ -1,0 +1,8 @@
+Framework:
+Un Framework, es digamos como una librería de codigos ya hechos, en los que podemos reútilizar y se nos haga mas rapido y eficiente a la hora de crear nuevos codigos, ya que los estamos reutilizando.
+
+Pre-Procesadores:
+Los Procesadores son basicamente codigo de Procesadores o un lenguaje similar al de css pero un poco menos de nivel que css. estos sirven para ahorrarnos codigos ya sea creando variables o creando funciones como lo haria por ejemplo javascript. Los preprocesadores solo sirven para css, este hace que las cantidades elevadas de lineas de codigo disminuyan y se convierta en codigo mas legible y mas facil de usar o editar.
+
+Responsive website:
+Es una pagina la cual es adaptada automaticamente para todo tipo de pantallas la cual haga uso de la website.
