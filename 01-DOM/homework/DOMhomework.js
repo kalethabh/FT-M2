@@ -8,7 +8,7 @@ var toDoItems = [];
 // Tu código acá:
 
 let createdBy = document.querySelector("#createdBy");
-createdBy.innerHTML = createdBy.innerHTML + " Kaleth Benjumea"; 
+createdBy.innerHTML = createdBy.innerHTML + " Kaleth Benjumea."; 
 
 // Crear una clase denominada 'ToDo' cuyo varructor debe recibir un único parámetro del tipo string
 // con el nombre 'description' que será justamente la descripción del ToDo.
