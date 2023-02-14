@@ -13,7 +13,7 @@ var arrow = x =>  x + 3 ;
 
 var bob = {
     _name: "Bob",
-    _friends: ['Alejo'],
+    _friends: ['Kaleth'],
     printFriends() {
         var that = this;
       that._friends.forEach(f =>
@@ -49,7 +49,7 @@ var [a, b, c] = [1, 2, 3];
 var [a, ,d] = [1, 2, 3];
 
 var obj = {
-    nombre : "Alejo",
+    nombre : "Kaleth",
     edad: 25,
     usuario: {
         username: "hola123"
@@ -58,7 +58,7 @@ var obj = {
 
 var {nombre, usuario:{username}} = obj;
 
-nombre = "Alejo",
+nombre = "Kaleth",
 username = "hola123"
 
 //default
