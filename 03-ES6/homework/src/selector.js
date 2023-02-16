@@ -12,7 +12,7 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
 
 
 
-  /* if(matchFunc(startEl)){
+  if(matchFunc(startEl)){
     resultSet.push(startEl);
   }
   
@@ -22,7 +22,7 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
     
   }
   return resultSet;
-}; */
+};
 
 
 
@@ -53,9 +53,9 @@ var matchFunctionMaker = function(selector) {
   } else if (selectorType === "tag.class") {
     matchFunc = (element) => "." + element.id === selector;
   } else if (selectorType === "tag") {
-    matchFunc = (element) =>   === selector;
+    matchFunc = (element) => === selector;
   }
-  return matchFunction;
+  return matchFunc;
 };
 
 var $ = function(selector) {
