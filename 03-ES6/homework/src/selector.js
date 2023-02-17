@@ -20,7 +20,7 @@ var traverseDomAndCollectElements = function (matchFunc, startEl) {
       matchFunc,
       startEl.children[i]
     );
-    resultSet = [...resultSet, ...elements];
+    resultSet = [...resultSet, ...ressult];
   }
   return resultSet;
 };
@@ -49,9 +49,14 @@ var matchFunctionMaker = function (selector) {
   } else if (selectorType === "class") {
     matchFunc = (element) => "." + element.id === selector;
   } else if (selectorType === "tag.class") {
-    matchFunc = (element) => "." + element.id === selector;
+    let [tag, clase] = selector.split(".");
+    return (
+      matchFunctionMaker(tag)(element) && matchFunctionMaker(clase)(element)
+    );
+    //matchFunc = (element) => "." + element.id === selector;
   } else if (selectorType === "tag") {
-    matchFunc = (element) => "." === selector;
+    if (selector.toLowerCase() === element.tagName.tpLowerCase()) return true;
+    //matchFunc = (element) => "." + element.id=== selector;
   }
   return matchFunc;
 };
