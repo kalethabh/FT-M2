@@ -39,7 +39,7 @@ var selectorTypeMatcher = function (selector) {
 // NOTA SOBRE LA FUNCIÓN MATCH
 // recuerda, la función matchFunction devuelta toma un elemento como un
 // parametro y devuelve true/false dependiendo si el elemento
-// matchea el selector.
+// matchea el selector..
 
 var matchFunctionMaker = function (selector) {
   var selectorType = selectorTypeMatcher(selector);
