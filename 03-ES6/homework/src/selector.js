@@ -53,7 +53,7 @@ var matchFunctionMaker = function(selector) {
   } else if (selectorType === "tag.class") {
     matchFunc = (element) => "." + element.id === selector;
   } else if (selectorType === "tag") {
-    matchFunc = (element) => === selector;
+    matchFunc = (element) => "." === selector;
   }
   return matchFunc;
 };
