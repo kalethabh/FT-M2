@@ -1,7 +1,8 @@
 var _ = require('underscore');
 var lodash = require('lodash');
 
-console.log('se ejecuto el codigo de este modulo')
+
+console.log('Se ejecuto el codigo de este modulo')
 
 _.each(['estoy', 'usando', 'underscore', 'en el', 'browser'], console.log);
 
