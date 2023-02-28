@@ -1,8 +1,6 @@
 import React from "react";
 import Botones from "./Botones.jsx";
 
-
-
 const studentName = "Kaleth";
 const techSkills = ["Html", "Css", "JavaScript", "React", "Redux"];
 const alerts = { m1: "Aprobado", m2: "En curso" };
