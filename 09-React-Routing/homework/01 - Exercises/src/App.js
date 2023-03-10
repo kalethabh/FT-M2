@@ -8,6 +8,8 @@ import CardDetail from "./components/CardDetail/CardDetail.jsx";
 /* eslint-disable */
 import { Routes,Route } from "react-router-dom";
 
+
+export default function App() {
 <Routes>
   <NavBar />
   <Route path="/" element={<Home/>}/>
@@ -15,7 +17,5 @@ import { Routes,Route } from "react-router-dom";
   <Route path="/promotions" element={<Promotions/>}/>
   <Route path="/cruises/:id" element={<CardDetail/>}/>
 </Routes>
-
-export default function App() {
   return <div></div>;
 }
