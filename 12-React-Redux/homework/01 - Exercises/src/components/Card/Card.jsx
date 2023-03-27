@@ -1,10 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './card.css';
+import {useDispatch} from 'react-redux'
+import * as action from '../../redux/actions/actions'
 
 export function Card({ name, price }) {
+   const dispatch = useDispatch()
    function handleDelete(){
-      deleteProduct(id)
+      dispatch(action.deleteProduct(id))
    }
    return (
       <div className='cardBg'>
@@ -18,7 +21,7 @@ export function Card({ name, price }) {
 export function mapDispatchToProps() {
    return{
       deleteProduct: function(id){
-         dispatchEvent(deleteProduct(id))
+         dispatch(deleteProduct(id))
       }
    }
 }

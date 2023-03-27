@@ -11,8 +11,17 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
     // completa para este caso
+      return(  
+        initialState.count++
+      )
     case DECREMENT:
     // Fill para este otro
+      setTimeout(function () {
+        // Esperar 1000 ms (1 segundo)
+        state.count--; // Incrementar el contador después del retraso
+      }, 1000);
+      return (setTimeout())
+      
     default:
       return state;
   }

@@ -12,7 +12,6 @@ var valor = document.getElementById('valor');
 // Utilizamos el elemento obtenido arriba para mostrar el State.
 function renderContador() {
   const contadorActual = store.getState().contador;
-
   valor.innerHTML = contadorActual;
   // Obtenemos la propiedad 'contador' de nuestro store:
   // Seteamos el número obtenido como texto dentro del elemento con id 'valor':
@@ -25,11 +24,7 @@ renderContador();
 store.subscribe(renderContador);
 // Por último, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
 // hagan un dispatch al store de la acción correspondiente:
-
 document.getElementById('incremento').addEventListener('click', () => store.dispatch(incremento()));
-
 document.getElementById('decremento').addEventListener('click', () => store.dispatch(decremento()));
-
 document.getElementById('incrementoImpar').addEventListener('click', () => store.dispatch(impar()));
-
 document.getElementById('incrementoAsync').addEventListener('click', () => store.dispatch(async()));

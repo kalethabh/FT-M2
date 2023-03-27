@@ -31,5 +31,7 @@ const async = () => {
 
 module.exports = {
   incremento,
-  decremento
-}
+  decremento,
+  impar,
+  async
+};

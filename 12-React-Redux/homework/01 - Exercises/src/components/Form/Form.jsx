@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import Caja from '../../assets/caja.png';
 import './form.css';
 import {addProduct} from '../../redux/actions/actions';
@@ -19,7 +19,7 @@ function Form() {
       })
    }
    return (
-      <div className='formBg'>
+      <form onSubmit={haandleSubmit()} className='formBg'>
          <div className='inputBox'>
             <label>Nombre: </label>
             <input
@@ -39,11 +39,12 @@ function Form() {
          </div>
          <button className='formBtn'>¡ADD!</button>
          <img src={Caja} alt='' className='logo' />
-      </div>
+      </form>
    );
 }
 
 export function mapDispatchToProps() {
+   const dispatch = useDispatch()
    return{
       addProduct: function(product){
          dispatch(addProduct(product))

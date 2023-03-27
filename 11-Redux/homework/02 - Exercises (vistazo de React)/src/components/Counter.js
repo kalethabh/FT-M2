@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { increment, decrement } from "../actions";
+import { increment, decrement, INCREMENT} from "../actions";
+import { useDispatch } from "react-redux";
 
 class Counter extends Component {
   // Extra Credit
@@ -11,16 +12,16 @@ class Counter extends Component {
   incrementAsync = () => {
     //  Implementar una función de incremento que aumenta después de esperar un segundo
   };
-
   render() {
+
     // Completa las funciones onClick de los botones
     // Al hacer clic en estos botones, el recuento debe disminuir o aumentar en consecuencia
     return (
       <p>
         Clickeado: {this.props.count} veces
         <button
-          onClick={() => {
-            /* Completar */
+          onClick={()=>{
+            this.props.count++
           }}
         >
           + {/* Incremeta */}
